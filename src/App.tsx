@@ -1,16 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BioCard from "./components/BioCard";
+import ImageTextCard from "./components/ImageCard";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
+        <BioCard />
       </header>
-      <body>
-      </body>
+      <div className="App-body">
+        <ImageTextCard title="Aim Trainer" link="https://aimTrainer.myjeef.ca" imageUrl="./target.png" color="#ffeeee" />
+        <ImageTextCard title="Coming soon..." link="" imageUrl="./stopwatch.png" color="#ffffff" />
+      </div>
+      <footer className="App-footer">
+        <p>© 2025 Jeef Portfolio</p>
+      </footer>
     </div>
   );
 }
